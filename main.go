@@ -237,7 +237,7 @@ func main() {
 	http.HandleFunc("/createuser", createUser)
 	http.HandleFunc("/user/", getUser)
 	http.HandleFunc("/createpost", createPost)
-	http.HandleFunc("/post", getPost)
+	http.HandleFunc("/post/", getPost)
 	http.HandleFunc("/post/users/", getUserPost)
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
